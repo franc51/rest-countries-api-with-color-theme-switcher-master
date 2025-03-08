@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="countries_header_container">
+      <h1 class="countries_header_logo"></h1>
+      <button class="countries_header_theme_toggle" id="toggle_btn">
+        Dark Mode
+      </button>
+    </div>
+
+    <section>
+      <div class="countries_container">
+        <div class="countries_actions">
+          <input
+            class="countries_actions_search"
+            type="search"
+            placeholder="Search for a country"
+          />
+          <select class="countries_actions_select" name="" id="">
+            <option value="">Filter by Region</option>
+            <option value="">Africa</option>
+            <option value="">America</option>
+            <option value="">Asia</option>
+            <option value="">Europe</option>
+            <option value="">Oceania</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="countries_list_container" id="countries_list_container"></div>
+    </section>
+  </body>
+</html>
