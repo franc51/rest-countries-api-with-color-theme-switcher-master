@@ -20,6 +20,30 @@ body {
   align-items: center;
   padding: 2rem 4rem;
 }
+.countries_actions_search {
+  font-family: "Nunito Sans";
+  font-size: 0.9rem;
+  border: none;
+  height: 2.6rem;
+  width: 20rem;
+  box-shadow: 1px 1px 7px 5px rgb(219, 219, 219);
+  background-image: url("files/design/search.png");
+  background-size: 1.5rem;
+  background-position: 1rem center;
+  background-repeat: no-repeat;
+  padding-left: 3rem;
+  border-radius: 4px;
+}
+.countries_actions_select {
+  height: 2.6rem;
+  width: 8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: gray;
+}
 .countries_list_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -74,7 +98,7 @@ a {
   cursor: pointer;
 }
 .countries_header_theme_toggle:hover {
-  box-shadow: 1px 1px 10px 5px rgb(197, 194, 194);
+  border: 1px solid rgb(119, 117, 117);
 }
 
 @media (max-width: 600px) {
@@ -94,5 +118,11 @@ a {
   }
   .api-sucks {
     padding-left: 1rem;
+  }
+  .countries_actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
   }
 }

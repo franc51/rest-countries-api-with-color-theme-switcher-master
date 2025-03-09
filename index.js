@@ -77,7 +77,14 @@ theme_toggle.addEventListener("click", () => {
 
     document.querySelectorAll(".country").forEach((country) => {
       country.style.boxShadow = "1px 1px 10px 5px rgb(34, 33, 33)";
+      country.style.backgroundColor = "none";
     });
+
+    countries_actions_search.style.backgroundColor = "hsl(209, 23%, 22%)";
+    countries_actions_search.style.color = "white";
+    countries_actions_search.style.boxShadow = "none";
+
+    select_region.style.backgroundColor = "hsl(209, 23%, 22%)";
 
     isLightMode = false;
   } else {
@@ -86,13 +93,22 @@ theme_toggle.addEventListener("click", () => {
 
     document.querySelectorAll(".country").forEach((country) => {
       country.style.boxShadow = "1px 1px 10px 5px rgb(187, 187, 187)";
+      country.style.backgroundColor = "whitesmoke";
+      theme_toggle.style.color = "black";
     });
 
-    theme_toggle.style.color = "black";
     theme_toggle.style.backgroundImage = "url('files/design/moon.png')";
     theme_toggle.style.backgroundColor = "white";
+
     countries_header_container.style.boxShadow =
       "1px 1px 10px 5px rgb(190, 184, 184)";
+
+    countries_actions_search.style.backgroundColor = "whitesmoke";
+    countries_actions_search.style.color = "black";
+    countries_actions_search.style.boxShadow = "none";
+
+    select_region.style.backgroundColor = "whitesmoke";
+
     isLightMode = true;
   }
 });
