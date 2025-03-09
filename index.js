@@ -47,12 +47,14 @@ function displayCountries(data) {
       localStorage.setItem("country", item.name.official);
     });
     div.innerHTML = ` 
-        <a href="country-page.html">
-            <img src=" ${item.flags.png}" alt="" />
-            <h3>${item.name.official}</h3>
+        <a class="card_link" href="country-page.html">
+            <img class="flag-img" src=" ${item.flags.png}" alt="" />
+            <div class="country_info_">
+            <h3 class="country_name">${item.name.official}</h3>
             <p><span>Population:</span>${item.population}</p>
             <p><span>Region:</span>${item.region}</p>
             <p><span>Capital:</span>${item.capital}</p>
+            </div>
         </a>
         `;
     container.appendChild(div);
