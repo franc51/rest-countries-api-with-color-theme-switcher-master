@@ -2,6 +2,9 @@ let countries = [];
 let container = document.getElementById("countries_list_container");
 let theme_toggle = document.getElementById("toggle_btn");
 let select_region = document.getElementById("countries_actions_select");
+countries_header_container = document.getElementById(
+  "countries_header_container"
+);
 let countries_actions_search = document.getElementById(
   "countries_actions_search"
 );
@@ -63,16 +66,36 @@ function displayCountries(data) {
 
 theme_toggle.addEventListener("click", () => {
   if (isLightMode) {
-    body.style.background = "gray";
-    body.style.color = "white";
+    body.style.background = "hsl(207, 26%, 17%)";
+    body.style.color = "whitesmoke";
+    countries_header_container.style.boxShadow =
+      "1px 1px 10px 5px rgb(34, 33, 33)";
+    theme_toggle.style.backgroundColor = "hsl(207, 26%, 17%)";
+
+    theme_toggle.style.color = "whitesmoke";
+    theme_toggle.style.backgroundImage = "url('files/design/moonDark.png')";
+
+    document.querySelectorAll(".country").forEach((country) => {
+      country.style.boxShadow = "1px 1px 10px 5px rgb(34, 33, 33)";
+    });
+
     isLightMode = false;
   } else {
     body.style.background = "white";
     body.style.color = "black";
+
+    document.querySelectorAll(".country").forEach((country) => {
+      country.style.boxShadow = "1px 1px 10px 5px rgb(187, 187, 187)";
+    });
+
+    theme_toggle.style.color = "black";
+    theme_toggle.style.backgroundImage = "url('files/design/moon.png')";
+    theme_toggle.style.backgroundColor = "white";
+    countries_header_container.style.boxShadow =
+      "1px 1px 10px 5px rgb(190, 184, 184)";
     isLightMode = true;
   }
 });
-
 select_region.addEventListener("change", (event) => {
   let selected_filter_region = event.target.value;
   getCountryByRegion(selected_filter_region);
