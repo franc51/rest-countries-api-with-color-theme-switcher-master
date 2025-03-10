@@ -92,8 +92,8 @@ theme_toggle.addEventListener("click", () => {
     body.style.color = "black";
 
     document.querySelectorAll(".country").forEach((country) => {
-      country.style.boxShadow = "1px 1px 10px 5px rgb(187, 187, 187)";
-      country.style.backgroundColor = "whitesmoke";
+      country.style.boxShadow = "1px 1px 10px 5px rgb(231, 225, 225)";
+      country.style.backgroundColor = "white";
       theme_toggle.style.color = "black";
     });
 
