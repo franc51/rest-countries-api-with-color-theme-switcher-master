@@ -45,7 +45,7 @@ function displayCountry(country) {
 
 theme_toggle.addEventListener("click", () => {
   if (isLightMode) {
-    body.style.background = "gray";
+    body.style.background = "black";
     body.style.color = "white";
     isLightMode = false;
   } else {
