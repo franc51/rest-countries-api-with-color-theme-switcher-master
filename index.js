@@ -71,7 +71,7 @@ theme_toggle.addEventListener("click", () => {
     countries_header_container.style.boxShadow =
       "1px 1px 7px 5px rgb(43, 42, 42)";
     countries_header_container.style.background = "hsl(209, 23%, 22%)";
-    theme_toggle.style.backgroundColor = "hsl(207, 26%, 17%)";
+    theme_toggle.style.backgroundColor = "hsl(209, 23%, 22%)";
 
     theme_toggle.style.color = "whitesmoke";
     theme_toggle.style.backgroundImage = "url('files/design/moonDark.png')";

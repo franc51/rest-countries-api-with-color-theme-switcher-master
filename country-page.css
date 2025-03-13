@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 0.5rem 4rem;
   box-shadow: 1px 1px 10px 5px rgb(187, 187, 187);
 }
 .countries_header_theme_toggle {
@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: left;
   margin-left: 9rem;
-  gap: 8rem;
+  gap: 6rem;
   width: 100%;
 }
 .back-btn {
@@ -62,8 +62,58 @@ a {
 }
 .country_description {
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
 }
 p {
   line-height: 1.5rem;
+  font-weight: 600;
+}
+span {
+  font-weight: 300;
+}
+.country_flag {
+  height: 25vw;
+}
+
+@media (max-width: 600px) {
+  .countries_list_container {
+    grid-template-columns: 1fr;
+    padding: 1rem auto;
+  }
+  .countries_header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 5px rgb(233, 224, 224);
+  }
+  .countries_header_logo {
+    font-size: 1.2rem;
+  }
+  .country {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+  .country_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .country_flag {
+    height: auto;
+  }
+  .back-btn {
+    margin: 1rem 2rem;
+    margin-top: 2rem;
+    padding: 0.6rem 1rem;
+    padding-left: 3.5rem;
+    width: 3rem;
+  }
+  .country_description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
